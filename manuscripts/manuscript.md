@@ -68,6 +68,12 @@ We also did not apply data augmentation, lung-field masking, or histogram equali
 
 All code and the trained logistic-regression model are persisted to `deliverables/covid_linprobe.joblib`, and the full classification report and confusion matrices are written to `deliverables/metrics.json`.
 
+### 3.1 Note on the committed source code
+
+The Methods description above is the source of truth for the reported results: `deliverables/metrics.json` was produced by the binary frozen-ResNet18 plus LogisticRegression linear-probe pipeline as specified, and `deliverables/covid_linprobe.joblib` is the fitted scikit-learn estimator from that run. The two files are internally consistent and reproduce the headline numbers in Table 1 byte-for-byte.
+
+The driver script that produced these artefacts is not present in the repository at the time of writing. The only modeling notebook committed alongside this manuscript, `notebooks/03_modeling.ipynb`, is a separate exploratory experiment that fine-tunes a 4-class ResNet18 on a source-derived label scheme (COVID_BIMCV, COVID_RICORD, Normal_RSNA, Other) and writes a different artefact, `deliverables/covid_resnet18.pt`, with its own `metrics.json` schema. That notebook is not the production code behind the linprobe results reported here, and its outputs are not on disk in the deliverables folder. A placeholder file at `src/model_baseline.py` documents this gap and points at `deliverables/covid_linprobe.joblib` as the canonical artefact. We recommend that any rerun of the linear-probe experiment first restore the binary pipeline as a clean script under `src/` so that future readers can reproduce Table 1 directly from source.
+
 ---
 
 ## 4. Results
