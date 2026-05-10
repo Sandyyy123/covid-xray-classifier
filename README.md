@@ -66,7 +66,7 @@ pip install -r requirements.txt
 
 # See data/README.md for dataset download
 python src/model_baseline.py
-python src/model_advanced.py
+jupyter notebook notebooks/03_modeling.ipynb  # advanced transfer learning
 ```
 
 ---
