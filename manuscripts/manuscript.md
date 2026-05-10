@@ -2,7 +2,7 @@
 
 **Author:** Sandeep Grover
 
-**Affiliation:** Independent research, Mossingen, Germany
+**Affiliation:** Independent research, Germany
 
 
 
