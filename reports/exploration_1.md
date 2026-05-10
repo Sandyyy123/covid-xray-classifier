@@ -10,7 +10,7 @@
 - Headline references in the brief:
   - Chowdhury et al. (2020), arXiv 2003.13865.
   - Rahman et al. (2021), Computers in Biology and Medicine, doi 10.1016/j.compbiomed.2021.105002.
-- Local archive: `/root/AI/project_root/data/covid_xrays_archive.zip` (~29 GB on disk; the brief lists 1.15 GB which corresponds to the v3 release, so this archive is the expanded v5 release with 4 classes plus segmentation masks).
+- Local archive: `data//covid_xrays_archive.zip` (~29 GB on disk; the brief lists 1.15 GB which corresponds to the v3 release, so this archive is the expanded v5 release with 4 classes plus segmentation masks).
 
 ## 2. Archive structure (expected, auto-detected at runtime)
 
