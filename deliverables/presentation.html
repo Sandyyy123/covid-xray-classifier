@@ -97,7 +97,7 @@
 <section id="data">
   <h2>Dataset and Exploration</h2>
   <h1>Exploration Report 1: COVID-19 Chest X-ray Dataset</h1>
-<p><strong>Project:</strong> Liora 08 - Analysis of COVID-19 chest X-rays
+<p><strong>Project:</strong> Portfolio 08 - Analysis of COVID-19 chest X-rays
 <strong>Date:</strong> 2026-05-01
 <strong>Scope:</strong> Initial data exploration on a sampled view of the archive (first 200 images per class). The full archive on disk is approximately 29 GB so it is never extracted; image bytes are streamed directly from the zip via <code>zipfile</code>.</p>
 <h2>1. Source</h2>
@@ -106,7 +106,7 @@
 <li>Headline references in the brief:</li>
 <li>Chowdhury et al. (2020), arXiv 2003.13865.</li>
 <li>Rahman et al. (2021), Computers in Biology and Medicine, doi 10.1016/j.compbiomed.2021.105002.</li>
-<li>Local archive: <code>/root/AI/liora_projects/08_covid_xrays/data/covid_xrays_archive.zip</code> (~29 GB on disk; the brief lists 1.15 GB which corresponds to the v3 release, so this archive is the expanded v5 release with 4 classes plus segmentation masks).</li>
+<li>Local archive: <code>/root/AI/project_root/data/covid_xrays_archive.zip</code> (~29 GB on disk; the brief lists 1.15 GB which corresponds to the v3 release, so this archive is the expanded v5 release with 4 classes plus segmentation masks).</li>
 </ul>
 <h2>2. Archive structure (expected, auto-detected at runtime)</h2>
 <p>The Kaggle release ships a single root folder (<code>COVID-19_Radiography_Dataset/</code>) containing one subfolder per class. Each class folder holds an <code>images/</code> directory of PNGs and a <code>masks/</code> directory of lung-field segmentation masks. The notebook detects classes by scanning for any path ending in an image extension that lives under an <code>images/</code> folder, so it adapts to either the v3 or v5 layout.</p>
@@ -506,7 +506,7 @@
 </section>
 
 <footer>
-  Liora ML Manuscripts Pipeline | Project 8 | Sandeep Grover | 2026-05-01
+  Portfolio ML Manuscripts Pipeline | Project 8 | Sandeep Grover | 2026-05-01
 </footer>
 </main>
 </body>
